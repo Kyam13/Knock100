@@ -1,13 +1,16 @@
 #00
+print("00\n")
 word1 = "stressed"
 print(word1[::-1])
 
 #01
+print("01\n")
 word2="パタトクカシーー"
 word=word2[::2]
 print(word)
 
 #02
+print("02\n")
 taxi="タクシー"
 for i in range(len(word)):
     print(word[i]+taxi[i],end='')
@@ -15,11 +18,13 @@ for i in range(len(word)):
         print('\n')
 
 #03
+print("03\n")
 cell="Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
 w=[word for word in cell.split(" ")]
 print(w)
 
 #04
+print("04\n")
 import string
 cell="Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can."
 for word in string.punctuation:
@@ -42,6 +47,7 @@ for char in chars:
 print(ans_word,cnt)
 
 #05
+print("05\n")
 import ngram
 def n_gram(cell):
     bi_gram=[]
@@ -53,16 +59,19 @@ def n_gram(cell):
 print(n_gram("I am an NLPer"))
 
 #06
+print("06\n")
 X=n_gram('paraparaparadise')
 Y=n_gram("paragraph")
 print("X&Y",X&Y,"X|Y,",X|Y,"X-Y",X-Y)
 
 # 07
+print("07\n")
 def stringtime(x,y,z):
     return "{0}時の{1}は{2}".format(x,y,z)
 print(stringtime(12,"気温",22.4))
 
 # 08
+print("08\n")
 def cipher(text):
     nocnt=[]
     newword=[]
@@ -88,6 +97,7 @@ def cipher(text):
 print(cipher("I An Am Emtrmvvi."))
 
 # 09
+print("09\n")
 text="I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind ."
 print(text)
 import random
