@@ -63,11 +63,47 @@ print(exaple==read)
 readfile.close()
 #14
 print("14\n")
-
+N=int(input())
+for i in range(N):
+    print(ana_tempfile[i],end='')
+print(subprocess.check_output("head -n10 hightemp.txt",shell=True,universal_newlines=True))
 #15
-print("10\n")
+print("15\n")
+N=int(input())
+for i in range(N)[::-1]:
+    print(ana_tempfile[int(len(ana_tempfile))-i-1],end='')
+print(subprocess.check_output("tail -n10 hightemp.txt",shell=True,universal_newlines=True))
+
 #16
-print("10\n")
+print("16\n")
+N=len(ana_tempfile)/int(input())
+newtext=[]
+anstext=[]
+new=""
+ans=""
+for i in range(len(ana_tempfile)):
+    if i==23:
+        newtext.append(ana_tempfile[i])
+        new="".join(newtext)
+        anstext=new.split('\n')
+        ans=" ".join(anstext)
+        print(ans,len(newtext))
+        new=""
+        newtext=[]
+        ans=""
+    elif (i+1)%(N)==0:
+        new="".join(newtext)
+        anstext=new.split('\n')
+        ans=" ".join(anstext)
+        print(ans,len(newtext))
+        new=""
+        newtext=[]
+        ans=""
+        newtext.append(ana_tempfile[i])
+
+    else:
+        newtext.append(ana_tempfile[i])
+
 #17
 print("10\n")
 #18

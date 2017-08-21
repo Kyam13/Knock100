@@ -1,0 +1,32 @@
+00
+
+desserts
+01
+
+パトカー
+02
+
+パタトクカシーー
+
+03
+
+['Now', 'I', 'need', 'a', 'drink,', 'alcoholic', 'of', 'course,', 'after', 'the', 'heavy', 'lectures', 'involving', 'quantum', 'mechanics.']
+04
+
+{1: 'H', 2: 'He', 3: 'Li', 4: 'Be', 5: 'B', 6: 'C', 7: 'N', 8: 'O', 9: 'F', 10: 'Ne', 11: 'Na', 12: 'Mi', 13: 'Al', 14: 'Si', 15: 'P', 16: 'S', 17: 'Cl', 18: 'Ar', 19: 'K', 20: 'Ca'} 21
+05
+
+{'I ', 'm ', 'er', ' N', '$I', ' a', 'an', 'Pe', 'NL', 'r$', 'am', 'LP', 'n '}
+06
+
+X&Y {'pa', '$p', 'ra', 'ap', 'ar'} X|Y, {'is', 'e$', 'ag', 'ad', 'h$', 'pa', '$p', 'se', 'ph', 'ar', 'ap', 'di', 'gr', 'ra'} X-Y {'is', 'e$', 'se', 'ad', 'di'}
+07
+
+12時の気温は22.4
+08
+
+I Am An Engineer.
+09
+
+I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind .
+I phenomenal human I could was reading what believe understand power was reading reading human mind couldn't I the reading.
