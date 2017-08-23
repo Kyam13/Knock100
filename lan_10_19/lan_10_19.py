@@ -24,7 +24,7 @@ for char in tempfile:
         newtempcel+=char
 
 print(newtempcel==subprocess.check_output("expand -t 1 hightemp.txt",shell=True,universal_newlines=True))
-
+"""
 #12
 print("12\n")
 writefile1=open("col1.txt","w")
@@ -100,13 +100,48 @@ for i in range(len(ana_tempfile)):
         newtext=[]
         ans=""
         newtext.append(ana_tempfile[i])
-
     else:
         newtext.append(ana_tempfile[i])
-
+"""
 #17
 print("10\n")
+tabarr=[]
+newtab=[]
+for col in ana_tempfile:
+    tabarr=col.split("\t")
+    newtab.append(tabarr[0])
+setnewtab=set(newtab)
+print(setnewtab)
 #18
+from collections import defaultdict,OrderedDict
 print("18\n")
+tabarr=[]
+newtab={}
+cnt=0
+for col in ana_tempfile:
+    cnt+=1
+    tabarr=col.split("\t")
+    tamprature=float(tabarr[2])
+    newtab[col]=tamprature
+    tamprature=0
+    if cnt==23:
+        newcor=OrderedDict(sorted(newtab.items(),key=lambda x:x[1],reverse=True))
+        for new in newcor.keys():
+            print(new,end="")
 #19
 print("19\n")
+tabarr=[]
+newtab={}
+cnt=0
+for col in ana_tempfile:
+    cnt+=1
+    tabarr=col.split("\t")
+    newtab[col]=tabarr[0]
+    tamprature=0
+    if cnt==23:
+        print(newtab)
+        """
+        newcor=OrderedDict(sorted(newtab.items(),key=lambda x:x[1],reverse=True))
+        for new in newcor.keys():
+            print(new,end="")
+"""
